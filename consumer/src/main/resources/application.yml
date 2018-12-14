@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: dubbo-consumer
+server:
+  port: 8081
+dubbo:
+  application:
+    id: dubbo-consumer
+    name: dubbo-consumer
+  protocol:
+    id: duboo
+    name: dubbo
+    port: 54321
+  registry:
+    id: my-reg
+    address: zookeeper://127.0.0.1:2181

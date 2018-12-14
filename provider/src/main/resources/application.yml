@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: dubbo-provider-app
+server:
+  port: 8080
+dubbo:
+  scan:
+    base-packages: com.dubbo.provider.service
+  application:
+    id: dubbo-provider
+    name: dubbo-provider
+  protocol:
+    id: duboo
+    name: dubbo
+    port: 20880
+    status: server #标明是一个server
+  registry:
+    id: my-reg
+    address: zookeeper://127.0.0.1:2181
+endpoint:
+  dubbo:
+    enabled: true
+management:
+  port: 9091
+  health:
+    dubbo:
+      status:
+        extras: load,threadpool
+        defaults: memory
