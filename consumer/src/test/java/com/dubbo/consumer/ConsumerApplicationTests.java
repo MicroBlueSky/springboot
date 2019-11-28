@@ -12,5 +12,6 @@ public class ConsumerApplicationTests {
     @Test
     public void contextLoads() {
     }
+    //士大夫艰苦撒旦解放速度快 
 
 }
